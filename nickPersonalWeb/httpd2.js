@@ -14,9 +14,10 @@ httpd.createServer(function(request, response) {
   //response.writeHead(200, {"content-type": "plain-text"});
   //使用HTML
   response.writeHead(200, {"content-type": "text/html"});
-  response.writeHead(200, {"content-language": "Unicode"});
-  response.write('<html><title>Nick personalWeb HTTPd</title><body>');
-  response.write('<h1>Hello,World!測試成功</h1>');
+  //response.writeHead(200, {"content-language": "Unicode"});
+  response.write('<html><title>Nick personalWeb HTTPd</title>');
+  response.write('<head><meta charset="utf-8"/></head><body>');
+  response.write('<h1>Hello,World!Test success測試成功</h1>');
   response.write("</body></html>");
   response.end();
 }).listen(8888);
